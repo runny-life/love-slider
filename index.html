@@ -9,8 +9,16 @@
   <title>Для тебя ❤</title>
   <link
     rel="stylesheet"
-    href="/src/css/style.css"
-  />
+    href="./src/css/style.css"
+  >
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.182.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.182.0/examples/jsm/"
+      }
+    }
+  </script>
 </head>
 <body>
   <div
@@ -38,21 +46,36 @@
 
     <!-- Слайд 2 -->
     <section
-      class="slide"
+      class="slide slide-letter"
       data-slide="1"
     >
-      <div class="content">
-        <div class="heart-pulse">❤</div>
-        <h1 class="fade-up">Для меня любовь — это не химия.</h1>
-        <p class="fade-up delay-1">Не бабочки в животе.</p>
-        <p class="fade-up delay-2">Это <span class="accent">выбор</span>. Каждый день.</p>
-        <p class="fade-up delay-3">И я выбираю тебя.</p>
+      <div class="envelope-glow"></div>
+
+      <article class="letter">
+        <div class="letter-paper">
+          <p class="letter-greeting">Тебе.</p>
+
+          <h2 class="letter-title">Любовь — это выбор.</h2>
+
+          <p>Не вспышка, не химия, не бабочки в животе. Это решение, которое&nbsp;ты принимаешь снова и снова — каждое утро, каждый день, выбирая одного человека.</p>
+
+          <p class="letter-quote">А что значит — любить?</p>
+
+          <p>Любить — это когда ты хочешь сделать этого человека счастливым. Когда он выходит на передний план, становится приоритетом. Когда всё — ради него. И ты готов на всё.</p>
+
+          <p>Вот что для меня любовь.</p>
+
+          <p>И пусть мы вместе не так долго — ты стала тем человеком, которого я полюбил. <em>По-настоящему.</em></p>
+
+          <p class="letter-signature">— твой <span class="heart-mini">❤</span></p>
+        </div>
+
         <button
-          class="btn fade-up delay-4"
+          class="btn letter-next"
           data-next
         >Дальше →
         </button>
-      </div>
+      </article>
     </section>
 
     <!-- Слайд 3 -->
@@ -61,12 +84,8 @@
       data-slide="2"
     >
       <canvas id="galaxy"></canvas>
-      <div class="content galaxy-content">
-        <h1 class="galaxy-title">Я тебя люблю</h1>
-        <div
-          class="languages"
-          id="languages"
-        ></div>
+      <div class="galaxy-content">
+        <p class="galaxy-hint">Крути мышкой · Приближай колесом · Читай 💫</p>
         <button
           class="btn"
           data-next
@@ -91,7 +110,7 @@
 
   <script
     type="module"
-    src="/src/js/main.js"
+    src="./src/js/main.js"
   ></script>
 </body>
 </html>
