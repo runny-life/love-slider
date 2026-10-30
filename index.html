@@ -1,13 +1,97 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>love-slider</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Для тебя ❤</title>
+  <link
+    rel="stylesheet"
+    href="/src/css/style.css"
+  />
+</head>
+<body>
+  <div
+    class="stars-bg"
+    id="starsBg"
+  ></div>
+
+  <main class="slider">
+    <!-- Слайд 1 -->
+    <section
+      class="slide active"
+      data-slide="0"
+    >
+      <div class="content">
+        <h1 class="fade-up">Я многого не понимаю.</h1>
+        <p class="fade-up delay-1">Многое хочу понять.</p>
+        <p class="fade-up delay-2">И понять это — <span class="accent">именно с тобой</span>.</p>
+        <button
+          class="btn fade-up delay-3"
+          data-next
+        >Дальше →
+        </button>
+      </div>
+    </section>
+
+    <!-- Слайд 2 -->
+    <section
+      class="slide"
+      data-slide="1"
+    >
+      <div class="content">
+        <div class="heart-pulse">❤</div>
+        <h1 class="fade-up">Для меня любовь — это не химия.</h1>
+        <p class="fade-up delay-1">Не бабочки в животе.</p>
+        <p class="fade-up delay-2">Это <span class="accent">выбор</span>. Каждый день.</p>
+        <p class="fade-up delay-3">И я выбираю тебя.</p>
+        <button
+          class="btn fade-up delay-4"
+          data-next
+        >Дальше →
+        </button>
+      </div>
+    </section>
+
+    <!-- Слайд 3 -->
+    <section
+      class="slide slide-galaxy"
+      data-slide="2"
+    >
+      <canvas id="galaxy"></canvas>
+      <div class="content galaxy-content">
+        <h1 class="galaxy-title">Я тебя люблю</h1>
+        <div
+          class="languages"
+          id="languages"
+        ></div>
+        <button
+          class="btn"
+          data-next
+        >Дальше →
+        </button>
+      </div>
+    </section>
+
+    <!-- Слайд 4 -->
+    <section
+      class="slide"
+      data-slide="3"
+    >
+      <div class="content">
+        <h1 class="fade-up">Я говорил это один раз.</h1>
+        <p class="fade-up delay-1">Но буду говорить чаще.</p>
+        <p class="fade-up delay-2 big-accent">Я очень сильно тебя люблю.</p>
+        <div class="heart-pulse final fade-up delay-3">❤</div>
+      </div>
+    </section>
+  </main>
+
+  <script
+    type="module"
+    src="/src/js/main.js"
+  ></script>
+</body>
 </html>
